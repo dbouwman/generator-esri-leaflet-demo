@@ -1,0 +1,39 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+#page-region{
+  margin-top:30px;
+}
+#map{
+  top:50px;
+  right:0;
+  left:0;
+  bottom:0;
+  position: absolute;
+}
+#info-region{
+  border: 1px solid #000000;
+  @include border-radius(10px);
+  background-color: rgba(0,0,0,0.6);
+  color:#EEE;
+  min-height: 100px;
+  width: 300px;
+  position: absolute;
+  top: 70px;
+  right: 29px;
+  z-index: 100;
+  .info-wrapper{
+    margin:20px;
+    ul{
+      padding:10px;
+      list-style:none;
+    }
+  }
+}
+

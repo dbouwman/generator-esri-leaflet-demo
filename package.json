@@ -1,0 +1,39 @@
+{
+  "name": "generator-esri-leaflet-demo",
+  "version": "0.0.1",
+  "description": "Example app using Backbone, Marionette and Esri-Leaflet along with a grunt-based toolchain.",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "dbouwman/generator-esri-leaflet-demo",
+  "author": {
+    "name": "Dave Bouwman",
+    "email": "dave@davebouwman.com",
+    "url": "https://github.com/dbouwman"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "esri-leaflet",
+    "backbone", 
+    "marionette"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0",
+    "yosay": "^0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

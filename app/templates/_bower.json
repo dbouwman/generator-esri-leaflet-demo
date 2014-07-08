@@ -1,0 +1,10 @@
+{
+  "name": "<%= _.slugify(appName) %>",
+  "version": "0.0.1",
+  "dependencies": {
+    "sass-bootstrap": "~3.0.0",
+    "marionette": "~2.0.1",
+    "modernizr": "~2.8.3"
+  }
+}
+

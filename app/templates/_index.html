@@ -1,0 +1,107 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><%= appName %></title>
+        <meta name="description" content="Generated with yo bb-leaflet">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/leaflet.css">
+        <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/marker-cluster.css">
+        <!-- endbuild -->
+
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script> 
+        <!-- endbuild -->
+       
+
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home"><%= appName %></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!--li class="active"><a href="#">Basemaps</a></li-->
+            <li class="active dropdown" id="basemapList">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basemaps <b class="caret"></b></a>
+              <ul id="basemap-list" class="dropdown-menu"></ul>
+            </li>
+
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <!-- Region that we render pages into  -->
+    <div id="page-region"></div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- build:js scripts/app.js -->
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/marionette/lib/backbone.marionette.js"></script>
+
+    <script src="lib/leaflet-0.7.3/leaflet.js"></script>
+
+    <script src="lib/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+    <script src="lib/leaflet-markercluster/leaflet.markercluster.js"></script>
+    <script src="lib/esri-leaflet/0.0.1-beta.5/esri-leaflet-clustered-feature-layer.js"></script>
+
+    <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+   
+    <script src="lib/compiled-templates.js"></script>
+    <script src="scripts/base/overrides/marionette.renderer.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/base/application.js"></script>
+    <script src="scripts/base/controllers.js"></script>
+    <script src="scripts/modules/home/home_module.js"></script>
+    <script src="scripts/components/mapmanager/leaflet_map_controller.js"></script>
+    <script src="scripts/components/basemaps/basemaps.js"></script>
+
+    <script src="scripts/modules/home/show/show_controller.js"></script>
+    <script src="scripts/modules/home/show/show_mapview.js"></script>
+    <script src="scripts/modules/home/show/show_infoview.js"></script>
+    <script src="scripts/modules/home/show/show_layout.js"></script>
+    <script src="scripts/modules/home/about/about_controller.js"></script>
+    <script src="scripts/modules/home/about/about_view.js"></script>
+    <script src="scripts/modules/navigation/navigation-controller.js"></script>
+    <script src="scripts/bootstrapper.js"></script>
+
+    <!-- endbuild -->
+</body>
+</html>

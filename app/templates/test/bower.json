@@ -1,0 +1,11 @@
+{
+  "name": "test-harness",
+  "private": true,
+  "dependencies": {
+    "chai": "~1.8.0",
+    "mocha": "~1.14.0"
+  },
+  "devDependencies": {
+    "jasmine-jquery": "~2.0.3"
+  }
+}
