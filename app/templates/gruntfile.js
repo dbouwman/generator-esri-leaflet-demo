@@ -64,7 +64,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: ['<%= yeoman.app %>/scripts/**/*.js', '!<%= yeoman.app %>/scripts/**/*.{spec,mock}.js'],
-                tasks: ['jshint:all', 'jasmine:active'], 
+                tasks: ['jshint:all', 'jasmine:all'], 
                 options: {
                   livereload: true
                 }
@@ -402,7 +402,7 @@ module.exports = function (grunt) {
         'usemin'
     ]);
 
-    grunt.registerTask('watch-task', [ 'jshint', 'jasmine:active', 'jasmine:alltests' ]);
+    grunt.registerTask('watch-task', [ 'jshint', /*'jasmine:active',*/ 'jasmine:all' ]);
 
     grunt.registerTask('default', [
         'jshint',
